@@ -1,0 +1,8 @@
+- name: variables
+  hosts: web
+  vars_files:
+  -vars.files
+  tasks:                           
+    - name: print information
+    ansible.builtin.debug: #debug means message print cheytamu
+      msg: "hi, we are learning {{course}} from trainer{{trainer}}, duration is {{duration}}."

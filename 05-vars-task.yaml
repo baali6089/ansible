@@ -4,7 +4,7 @@
     course: "terraform"
     trainer: "siva"
     duration: "15hrs"
-  tasks:
+  tasks:                               #tasks lo unava 1st prefernce 
   - name: print information
     vars:
       course: "devops"
