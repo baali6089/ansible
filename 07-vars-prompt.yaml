@@ -1,0 +1,13 @@
+- name: variables
+  hosts: web
+  vars_prompt:
+  - name: username
+    prompt: please enter your username
+    private: false # false username showing
+  - name: password
+    prompt: please enter your password
+    private: true # true password not showimg  
+  tasks:                           
+  - name: print information
+    ansible.builtin.debug: #debug means message print cheytamu
+      msg: "hi, username: {{username}}. password is: {{duration}}"
