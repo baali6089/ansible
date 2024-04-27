@@ -1,5 +1,5 @@
 - name: variables
-  hosts: localhost
+  hosts: web
   tasks:                           
   - name: print information
     ansible.builtin.debug: 
