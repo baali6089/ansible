@@ -15,4 +15,20 @@
       msg: "after convert: {{ my_dict | dict2items }}"       
 
 
+- name: convert items to dictonary
+  hosts: web
+  vars:
+    my_list:
+    - {'key': 'course', 'value': 'devops'}, 
+    - {'key': 'trainer', 'value': 'harish'},
+    - {'key': 'duration', 'value': '120hr'}]
+  tasks:
+  - name: before convert
+    ansible.builtin.debug:
+      msg: "before convert: {{ my_list }}" 
+
+  - name: after convert
+    ansible.builtin.debug:
+      msg: "after convert: {{ my_dict | items2dict }}" 
+
  
