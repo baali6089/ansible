@@ -4,7 +4,7 @@
     my_dict:
       course: devops
       trainer: harish
-      duration:120hr
+      duration: 120hr
   tasks:
   - name: before convert
     ansible.builtin.debug:
