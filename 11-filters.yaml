@@ -8,8 +8,17 @@
 - name: upper case
   hosts: web
   vars:
-    greeting: "good moring"
+    greeting: "HELLO,good moring"
   tasks:  
   - name: upper case
     ansible.builtin.debug:
       msg: "{{greeting | upper }}"        
+
+- name: lower case
+  hosts: web
+  vars:
+    greeting: "HELLO,good moring"
+  tasks:  
+  - name: lower case
+    ansible.builtin.debug:
+      msg: "{{greeting | lower }}"              
