@@ -29,6 +29,6 @@
 
   - name: after convert
     ansible.builtin.debug:
-      msg: "after convert: {{ my_dict | items2dict }}" 
+      msg: "after convert: {{ my_list | items2dict }}" 
 
  
