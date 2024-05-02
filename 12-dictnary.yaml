@@ -21,7 +21,7 @@
     my_list:
     - {'key': 'course', 'value': 'devops'}, 
     - {'key': 'trainer', 'value': 'harish'},
-    - {'key': 'duration', 'value': '120hr'}]
+    - {'key': 'duration', 'value': '120hr'}
   tasks:
   - name: before convert
     ansible.builtin.debug:
