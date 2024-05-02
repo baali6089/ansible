@@ -1,0 +1,12 @@
+- name: loops install
+  hosts: web
+  become: yes
+  tasks:
+  - name: install pack
+    ansible.builtin.debug:
+      msg: " {{item}} "
+      state: latest
+    loop:
+    - mysql
+    - nginx
+    - postfix
