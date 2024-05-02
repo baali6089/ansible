@@ -27,6 +27,6 @@
   hosts: web
   numbers: [1, 2, 2, 3, 3, 4, 5] 
   tasks:
-  - name: remove number
+  - name: remove numbers
     ansible.builtin.debug:
-      msg: "{{number | unique}}"       
+      msg: "{{ numbers | unique}}"       
