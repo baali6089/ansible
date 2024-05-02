@@ -11,5 +11,5 @@
     greeting: "good moring"
   tasks:  
   - name: upper case
-    ansible.buildin.debug:
+    ansible.builtin.debug:
       msg: "{{greeting | upper }}"        
