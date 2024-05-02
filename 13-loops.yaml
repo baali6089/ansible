@@ -4,7 +4,7 @@
   - name: print name
     ansible.builtin.debug:
       msg: " hello {{item}} "
-  loop:
-  - mysql
-  - nginx
-  - shell
+    loop:
+    - mysql
+    - nginx
+    - shell 
